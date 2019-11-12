@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+url: magicnothing.github.io
+baseurl: /magicnothing
