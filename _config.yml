@@ -2,5 +2,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-url: magicnothing.github.io
-baseurl: /magicnothing
+url: magic-nothing.github.io
