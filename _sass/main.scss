@@ -24,6 +24,19 @@ a {
 	padding-right: 7px;
 }
 
+@media (min-width: 0px) and (max-width: 575px) {
+	.social-container {
+		text-align: right;
+	}
+}
+
+@media (min-width: 576px) {
+	.social-container {
+		text-align: center;
+	}
+}
+
+
 
 // ARTIST PAGE
 
