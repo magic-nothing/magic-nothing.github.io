@@ -1,13 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-light" data-toggle="affix">
-    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-        <div class="text-center" id="navbarsExample11">
-            <ul class="navbar-nav">
-            	{% for item in site.data.navigation %}
-	            	<li class="nav-item">
-	                    <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-	                </li>
-            	{% endfor %}
-            </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <div class="text-center">
+                <ul class="navbar-nav">
+                	{% for item in site.data.navigation %}
+    	            	<li class="nav-item">
+    	                    <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    	                </li>
+                	{% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
